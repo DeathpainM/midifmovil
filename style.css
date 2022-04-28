@@ -16,6 +16,20 @@ body .inicio{
   margin-top: 85px;
   text-align: center;
 }
+
+body .h1{
+  color: #bc955c;
+  letter-spacing: 4px;
+}
+body .h5{
+  color: #99171e;
+  letter-spacing: 2px;
+}
+
+body .botones{
+  border-color: #99171e;
+}
+
 nav{
   position: fixed;
   top: 0;
@@ -188,6 +202,18 @@ nav .navbar .links li:hover .js-sub-menu{
 .navbar .bx-menu{
   display: none;
 }
+
+.seleccion-avatar {
+  width: 85px;
+  /*-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; */
+  border: 1px solid #99171e;
+  /* position: relative;  */
+}
+
 
 /*////////  Modo Responsive  ////////*/
 
