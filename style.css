@@ -5,10 +5,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  
 }
 
 body{
   min-height: 100vh;
+  background-image: url(img/fondo.png);
+  background-size: 480px;
   
 }
 body .inicio{
@@ -23,12 +26,12 @@ body .h1{
 }
 body .h5{
   color: #99171e;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 
-body .botones{
+/* body .botones{
   border-color: #99171e;
-}
+} */
 
 nav{
   position: fixed;
@@ -210,7 +213,7 @@ nav .navbar .links li:hover .js-sub-menu{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%; */
-  border: 1px solid #99171e;
+  /* border: 1px solid #99171e; */
   /* position: relative;  */
 }
 
@@ -248,7 +251,7 @@ nav .navbar .links li:hover .js-sub-menu{
     display: block;
     max-width: 270px;
     width: 100%;
-    background:  #d8d8d899;
+    background:  #d8d8d8e0;
     line-height: 40px;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
