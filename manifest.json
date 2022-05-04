@@ -1,12 +1,12 @@
 {
-    "short_name": "MiDifMóvil",
-    "name": "MiDifMóvil",
+    "short_name": "MiDIFMovil",
+    "name": "Mi DIF Móvil",
     "id": "index.html",
     "start_url": "index.html",
     "background_color": "#fffff",
     "display": "standalone",
     "orientation": "portrait",
-    "theme_color": "#3498db",
+    "theme_color": "#fffff",
     "icons": [
         {
             "src": "img/icons/icon-72x72.png",
