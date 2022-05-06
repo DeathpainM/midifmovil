@@ -1,5 +1,4 @@
 let navbar = document.querySelector(".navbar");
-
 let navLinks = document.querySelector(".nav-links");
 let menuOpenBtn = document.querySelector(".navbar .bx-menu");
 let menuCloseBtn = document.querySelector(".nav-links .bx-x");

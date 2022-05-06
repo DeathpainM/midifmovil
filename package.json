@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "bootstrap": "^5.1.3"
-  }
+  },
+  "name": "midifmovil",
+  "description": "",
+  "version": "1.0.0",
+  "main": "sw.js",
+  "scripts": {
+    "consulta":"node js/SQL/query.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rene-mayett/midifmovil.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rene-mayett/midifmovil/issues"
+  },
+  "homepage": "https://github.com/rene-mayett/midifmovil#readme"
 }
