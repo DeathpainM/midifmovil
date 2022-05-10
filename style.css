@@ -60,7 +60,7 @@ nav .navbar{
   color: #99171e;
   text-decoration: none;
   font-weight: 600;
-  margin-right: 105px;
+  margin-right: 85px;
   
 }
 nav .navbar .nav-links{
@@ -120,7 +120,7 @@ nav .navbar .links li:hover .js-sub-menu{
   padding: 0 22px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-.navbar .links li .sub-menu a{
+.navbar .links li .sub-menu .fa-twitter a{
   color: #99171e;
   font-size: 15px;
   font-weight: 500;
