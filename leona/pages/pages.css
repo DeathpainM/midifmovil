@@ -39,6 +39,7 @@
     color: #99171e;
     text-decoration: none;
     font-weight: 600;
+    margin-right: 85px;
     
   }
   nav .navbar .nav-links{
@@ -185,6 +186,55 @@
     display: none;
   }
 
+
+  form{
+    display: block;
+    background-color: #ffffff;
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+form label{
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+}
+form input{
+    width: 100%;
+    display: block;
+    background-color: #e4eeff;
+    border: 1px solid #e4eeff;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #3b3b3b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.btn-form{
+    color: #fff;
+    border: 1px solid transparent;
+    line-height: 1.5;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    font-weight: 400;
+    border-radius: 2em;
+    padding: .375rem .75rem;
+    
+}
+#btn-enviar{
+    background-color: #99171e;
+    border-color: #99171e;
+    text-align: center;
+
+}
+
   /*////////  Modo Responsive  ////////*/
 
 @media (max-width:920px) {
@@ -303,10 +353,73 @@ nav .navbar .links li .sub-menu li{
       transform: rotate(90deg);
     }
 }
+
+
+
 @media (max-width:370px){
   nav .navbar .nav-links{
   max-width: 100%;
 } 
 }
-  
+
+.text-in{
+    color: #bc955b;
+    font-size: 30px;
+}
+/* form{
+    display: block;
+    background-color: #ffffff;
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+form label{
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+}
+form input{
+    width: 130%;
+    display: block;
+    background-color: #e4eeff;
+    border: 1px solid #e4eeff;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #3b3b3b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.btn-form{
+    color: #fff;
+    display: inline-block;
+    border: 1px solid transparent;
+    line-height: 1.5;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    font-weight: 400;
+    border-radius: 2em;
+    padding: .375rem .75rem;
+    margin-left: 40px;
+}
+#btn-enviar{
+    background-color: #99171e;
+    border-color: #99171e;
+    text-align: center;
+
+}
+
+#btn-limpiar-datos{
+    background-color: #99171e;
+    border-color: #99171e;
+
+}
+ */
+
  

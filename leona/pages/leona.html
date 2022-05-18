@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="pages.css">
+  <meta name="theme-color" content="#691c20"> <!-- d8d8d899-->
+  <title>Mi DIF Móvil</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" type="image/ico" href="../img/favicon.ico"/>
+
+  <!-- Android -->
+  <meta name="theme-color" content="#3498db">
+  <!-- IOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  <link rel="apple-touch-icon" href="../img/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="../img/icons/icon-152x152.png">
+
+  <!-- iPhone Xs Max (1242px x 2688px) -->
+  <link rel="apple-touch-startup-image"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+    href="../img/icons-ios/apple-launch-1125x2436.png">
+  <!-- iPhone X, Xs (1125px x 2436px) -->
+  <link rel="apple-touch-startup-image"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+    href="../img/icons-ios/apple-launch-1125x2436.png">
+  <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+  <link rel="apple-touch-startup-image"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)"
+    href="../img/icons-ios/apple-launch-1242x2208.png">
+  <!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+  <link rel="apple-touch-startup-image"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+    href="../img/icons-ios/apple-launch-750x1334.png">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MiDifMóvil">
+  
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="../../index.html"><img src="../img/header_logo.svg"></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <img src="../img/midifmovil.png" alt="midifmovil.png" style="width: 125px; height: 125px;">
+          <i class='bx bx-x'></i>
+        </div>
+
+        <ul class="links">
+          <li><i class="fa fa-arrow-left" style="color: #99171e;"><a href="../home-leona.html"> &nbsp; Volver atrás</i></a></li><p></p>
+          <li><a href="#contacto">Contacto <i class="fa fa-user" style="color: #99171e;"></i></a></li>
+          <li><a href="#info">Ayuda <i class="fa fa-question-circle" style="color: #99171e;"></i></a></li>
+
+      </ul>
+      </div>
+    </div>
+    
+  </nav>
+<br><br><br> 
+  
+      <div class="container" style="text-align: center;">
+          <i class="fa fa-user" style="font-size: 125px; color: #99171e;"></i>
+          <p class="text-in">Bienvenid@</p>
+      </div>
+
+      <div class="container">
+        <form>
+            <div>
+                <label for="">Ingresar CURP:</label>
+                <input id="input-curp" type="text" maxlength="18">
+            </div>
+            <div>
+                <label for="">Ingresar IDP:</label>
+                <input id="input-idp" type="text">
+            </div>
+    
+            <div style="text-align: center;">
+                <button type="button" id="btn-enviar" class="btn-form">Ingresar</button>
+            </div>
+    
+            <p id="p-mensaje-error"></p>
+    
+            <p id="p-mensaje-confirmacion"></p>
+    
+      </div>
+  
+  
+      <script src="pages.js"></script>
+</body>
+</html>
