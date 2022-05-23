@@ -88,15 +88,13 @@
         <form>
             <div>
                 <label for="">Ingresar CURP:</label>
-                <input id="input-curp" type="text" maxlength="18" value="">
-            </div>
-            <div>
+                <input id="curp" type="text" maxlength="18" name="">
                 <label for="">Ingresar IDP:</label>
-                <input id="input-idp" type="text" value="">
+                <input id="idp" type="text" name="">
             </div>
     
             <div style="text-align: center;">
-                <button type="button" id="btn-enviar" class="btn-form">Ingresar</button>
+                <button type="button" id="btn-enviar" onclick="validarDatos()" class="btn-form">Ingresar</button>
             </div>
     
             <p id="p-mensaje-error"></p>
