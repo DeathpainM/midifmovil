@@ -12,7 +12,7 @@ const APP_SHELL = [
     'style.css',
     'CentrosDIF/centros.html',
     'CentrosDIF/centros.js',
-    'appleona/pages/leona.html',
+    'appleona/pages/login.html',
     'appleona/home-leona.html',
     'appleona/leona.css',
     'appleona/leona.js',
