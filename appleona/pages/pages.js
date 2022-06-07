@@ -14,7 +14,7 @@ function validarDatos() {
 
     else {
         //console.log(local);
-        url='http://localhost:3000/login?curp=';
+        url='http://10.2.35.35:3000/login?curp=';
         fetch(url+inputcurp+'&idp='+inputidp).then((res) => 
         res.json()).then((query) => {
             console.log("Query OK: ", query[0].curp, query[0].idp);
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       console.log(todo);
 
-      url='http://localhost:3000/renovacion?nombre=';
+      url='http://10.2.35.35:3000/renovacion?nombre=';
       fetch(url + inputnb + '&apellido=' + inputap + '&fecha=' + fechaact + '&alcaldia='+ selac + '&idp=' + campoidp + '&file=' + foto , {
               method: 'POST', 
               headers: {
