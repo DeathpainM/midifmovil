@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/animate.css">
-  <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico" />
+  <link rel="shortcut icon" type="image/ico" href="../img/favicon.ico" />
 
   <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
@@ -23,56 +23,68 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../login.html">
-        <img src="https://www.dif.cdmx.gob.mx/themes/base/assets/images/logos/Logo_CDMX.png" alt="Logo_CDMX" width="200"
-          height="50" class="d-inline-block align-text-top" style="align-content: center;">
-        <img src="https://www.dif.cdmx.gob.mx/themes/base/assets/images/logos/Logo_Dependencia.png"
-          alt="Logo_Dependencia" width="220" height="50" class="d-inline-block align-text-top"
-          style="align-content: center;">
-      </a>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="Menu.html"><img src="../img/header_logo.svg" style="margin-right: 85px;"></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <img src="../img/midifmovil.png" alt="midifmovil.png" style="width: 125px; height: 125px;">
+          <i class='bx bx-x'></i>
+        </div>
+
+        <ul class="links">
+          <li><i class="fa fa-sign-out-alt" style="color: #99171e;"><a href="../home-leona.html"> &nbsp; Cerrar
+                sesión</i></a></li>
+          <p></p>
+          <li><a href="#contacto">Contacto <i class="fa fa-user" style="color: #99171e;"></i></a></li>
+          <li><a href="#info">Ayuda <i class="fa fa-question-circle" style="color: #99171e;"></i></a></li>
+
+        </ul>
+      </div>
+
+      <!-- <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+            <input type="text" placeholder="CURP: "><br>
+            <input type="number" placeholder="IDP: ">
+        </div>
+      </div>       -->
     </div>
   </nav>
 
+  <div class="container-fluid pb-5" style="background-color: #ffffff ;">
+    <div class="container-fluid px-md-5 px-0 pt-4 ">
+      <h1 class="h1">BECA LEONA VICARIO</h1>
+      <h5 class="h5">SEGUNDA RENOVACIÓN 2022</h5>
+      <div class="container-fluid px-md-5 px-0 pt-4">
+        <p style="text-align: initial; font-family: Arial, Helvetica, sans-serif; text-align: justify;">El siguiente
+          cuestionario es totalmente confidencial
+          y fue diseñado con el propósito de renovar la permanencia a este programa, por lo que
 
-  <div class="container">
-    <p style="text-align: center; font-size: x-large; font-style: bold;">PROGRAMA BECA LEONA VICARIO</p>
-    <p style="text-align: center; font-size: large; font-style: bold;">PRIMERA RENOVACIÓN 2022</p>
-    <p style="text-align: initial; font-family: Arial, Helvetica, sans-serif; text-align: justify;">El siguiente
-      cuestionario es totalmente confidencial
-      y fue diseñado con el propósito de renovar la permanencia a este programa, por lo que
-    <div class="row g-3" style="display: inline-block;">
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Apellidos" aria-label="First name"
-          style="text-transform: uppercase;">
+          <input type="text" placeholder="Apellidos" style="text-transform: uppercase;" id="AP">
+          <input type="text" placeholder="Nombre(s)" style="text-transform: uppercase;" id="NB">, declara los siguientes datos,
+          bajo protesta de decir verdad.
+        </p>
+        <p style="text-align: justify;">
+          Si se detecta falsedad en lo declarado y en la documentación adjunta,
+          se procedera a la baja inmediata en el programa
+        </p>
       </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Nombre(s)" aria-label="Last name"
-          style="text-transform: uppercase;">
-      </div>
-    </div>
-    declara los siguientes datos, bajo protesta de decir verdad.
-    </p>
-    <p style="font-family: Impact, Haettenschweiler, 'Arial Bold', sans-serif; text-align: justify;">
-      Si se detecta falsedad en lo declarado y en la documentación adjunta,
-      se procedera a la baja inmediata en el programa.
-    </p>
-    <div class="row" style="display: inline-block;">
-      <form class="form-floating">
-        <input type="datetime-local" class="form-control" id="floatingInputValue" placeholder="name@example.com">
-        <label for="floatingInputValue">Fecha de renovación:</label>
-    </div>
-    <div class="row" style="display: inline-block;">
-      <div class="col-md">
-        <div class="form-floating">
-          <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+      <form class="row g-3" method="post" action="/">
+        <div class="col-md-2">
+          <label for="inputEmail4" class="form-label" style="color: #6f7271;">Fecha de Renovación</label>
+          <input type="datetime-local" class="form-control" id="fecha_act">
+        </div>
+        <div class="col-md-2">
+          <label for="inputEmail4" class="form-label" style="color: #6f7271;">Alcaldía:</label>
+          <select class="form-select" id="AC" aria-label="Floating label select example">
             <option selected>Selecciona una alcaldía</option>
             <option value="AZ">Azcapotzalco</option>
             <option value="AO">Álvaro Obregón</option>
             <option value="BJ">Benito Juárez</option>
             <option value="COY">Coyoacán</option>
-            <option value="CJ">Cuajimalpa</option>
+            <option value="CJ">Cuajimalpa</option> 
             <option value="CUA">Cuauhtémoc</option>
             <option value="GAM">Gustavo A. Madero</option>
             <option value="IZT">Iztacalco</option>
@@ -84,51 +96,456 @@
             <option value="VC">Venustiano Carranza</option>
             <option value="XC">Xochimilco</option>
           </select>
-          <label for="floatingSelectGrid">Alcaldía:</label>
+        </div>
+
+        <div class="col-md-2">
+          <label for="IDP" class="form-label" style="color: #6f7271;">IDP:</label>
+          <input type="number" class="form-control" id="CIDP">
+
+          <h5>Seleccione un archivo </h5> 
+<div class="mb-3">
+    <label for="formFile" class="form-label">Subir archivo</label>
+    <input class="form-control" type="file" id="File" accept="image/*">
+
+          <div style="text-align: center;">
+            <button type="button" id="button" onsubmit="validarInfo()" class="btn-form">Guardar</button>
+        </div>
+
+      </form>
+    </div>
+
+
+
+    <div class="container-fluid row px-0">
+      <div style="text-align: center;">
+        <h3 class="title">1. Datos Generales</h3>
+      </div>
+      <div>
+        <h4 class="title">1.1 Beneficiario(a)</h4>
+      </div>
+      <div class="d-flex justify-content-center justify-content-md-end align-items-center">
+        <small style="color: #3290ed;">Campos obligatorios*</small>
+      </div>
+      <form class="row g-3">
+        <div class="col-md-2">
+          <label for="APB" class="form-label" style="color: #6f7271;">Apellido Paterno:
+            <small style="color: #3290ed">*</small>
+          </label>
+          <input type="text" class="form-control" id="APB" style="text-transform: uppercase;" required>
+        </div>
+        <div class="col-md-2">
+          <label for="AMB" class="form-label" style="color: #6f7271;">Apellido Materno:
+            <small style="color: #3290ed">*</small>
+          </label>
+          <input type="text" class="form-control" id="AMB" style="text-transform: uppercase;" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="AMB" class="form-label" style="color: #6f7271;">Nombre(s):
+            <small style="color: #3290ed">*</small>
+          </label>
+          <input type="text" class="form-control" id="AMB" style="text-transform: uppercase;" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="FR" class="form-label" style="color: #6f7271;">Fecha de Nacimiento :
+            <small style="color: #3290ed">*</small>
+          </label>
+          <input type="date" class="form-control" id="FR" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="CURP" class="form-label" style="color: #6f7271;">CURP :
+            <small style="color: #3290ed">*</small>
+          </label>
+          <input type="text" class="form-control" id="CURP" maxlength="18" style="text-transform: uppercase;" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="gen" class="form-label" style="color: #6f7271;">Género&nbsp;<small
+              class="cdmx-input-error-text d-none" id="box-genre-other-error"></small></label>
+          <div class="container-fluid row d-flex align-items-center">
+            <div class="col-12 col-md-4 d-flex align-items-center">
+              <label class="cdmx-input-radio-container">
+                <span class="cdmx-input-radio-label">Femenino</span>
+                <input type="radio" class="" name="box-genre" id="box-genre-female" value="female" required>
+                <span class="cdmx-input-radio-check"></span>
+              </label>
+            </div>
+            <div class="col-12 col-md-3 d-flex align-items-center">
+              <label class="cdmx-input-radio-container">
+                <span class="cdmx-input-radio-label">Masculino</span>
+                <input type="radio" class="" name="box-genre" id="box-genre-male" value="male" required>
+                <span class="cdmx-input-radio-check"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <p>&nbsp;</p>
+      <div>
+        <h4 class="title">1.2 Madre o Tutora</h4>
+      </div>
+
+      <form class="row g-3">
+        <div class="col-md-2">
+          <label for="APB" class="form-label" style="color: #6f7271;">Apellido Paterno:
+            <small style="color: #3290ed">*</small>
+          </label>
+          <input type="text" class="form-control" id="APB" style="text-transform: uppercase;" required>
+        </div>
+        <div class="col-md-2">
+          <label for="AMB" class="form-label" style="color: #6f7271;">Apellido Materno:
+            <small style="color: #3290ed">*</small>
+          </label>
+          <input type="text" class="form-control" id="AMB" style="text-transform: uppercase;" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="AMB" class="form-label" style="color: #6f7271;">Nombre(s):
+            <small style="color: #3290ed">*</small>
+          </label>
+          <input type="text" class="form-control" id="AMB" style="text-transform: uppercase;" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="FR" class="form-label" style="color: #6f7271;">Fecha de Nacimiento :
+            <small style="color: #3290ed">*</small>
+          </label>
+          <input type="date" class="form-control" id="FR" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="CURP" class="form-label" style="color: #6f7271;">CURP :
+            <small style="color: #3290ed">*</small>
+          </label>
+          <input type="text" class="form-control" id="CURP" maxlength="18" style="text-transform: uppercase;" required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputEmail4" class="form-label" style="color: #6f7271;">Estado Civil:</label>
+          <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+            <option selected>
+              <--Selecciona-->
+            </option>
+            <option value="C">CASADA</option>
+            <option value="S">SOLTERA</option>
+            <option value="U">UNIÓN LIBRE</option>
+            <option value="V">VIUDA</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputEmail4" class="form-label" style="color: #6f7271;">Escolaridad:</label>
+          <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+            <option selected>
+              <--Selecciona-->
+            </option>
+            <option value="P">PRIMARIA</option>
+            <option value="S">SECUNDARIA</option>
+            <option value="BP">BACHILLERATO/PREPARATORIA</option>
+            <option value="CT">CARRERA TÉCNICA</option>
+            <option value="L">LICENCIATURA</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputEmail4" class="form-label" style="color: #6f7271;">Ocupación e instancia donde
+            labora:</label>
+          <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+            <option selected>
+              <--Selecciona-->
+            </option>
+            <option value="T">TAREAS DEL HOGAR NO REMUNERADO</option>
+            <option value="O">OTRO</option>
+          </select>
+        </div>
+    </div>
+    </form>
+
+    <div>
+      <h4 class="title">1.3 Padre o Tutor</h4>
+    </div>
+
+    <form class="row g-3">
+      <div class="col-md-2">
+        <label for="APB" class="form-label" style="color: #6f7271;">Apellido Paterno:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="APB" style="text-transform: uppercase;" required>
+      </div>
+      <div class="col-md-2">
+        <label for="AMB" class="form-label" style="color: #6f7271;">Apellido Materno:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="AMB" style="text-transform: uppercase;" required>
+      </div>
+
+      <div class="col-md-2">
+        <label for="AMB" class="form-label" style="color: #6f7271;">Nombre(s):
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="AMB" style="text-transform: uppercase;" required>
+      </div>
+
+      <div class="col-md-2">
+        <label for="FR" class="form-label" style="color: #6f7271;">Fecha de Nacimiento :
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="date" class="form-control" id="FR" required>
+      </div>
+
+      <div class="col-md-2">
+        <label for="CURP" class="form-label" style="color: #6f7271;">CURP :
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="CURP" maxlength="18" style="text-transform: uppercase;" required>
+      </div>
+
+      <div class="col-md-2">
+        <label for="inputEmail4" class="form-label" style="color: #6f7271;">Estado Civil:</label>
+        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+          <option selected>
+            <--Selecciona-->
+          </option>
+          <option value="C">CASADA</option>
+          <option value="S">SOLTERA</option>
+          <option value="U">UNIÓN LIBRE</option>
+          <option value="V">VIUDA</option>
+        </select>
+      </div>
+
+      <div class="col-md-2">
+        <label for="inputEmail4" class="form-label" style="color: #6f7271;">Escolaridad:</label>
+        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+          <option selected>
+            <--Selecciona-->
+          </option>
+          <option value="P">PRIMARIA</option>
+          <option value="S">SECUNDARIA</option>
+          <option value="BP">BACHILLERATO/PREPARATORIA</option>
+          <option value="CT">CARRERA TÉCNICA</option>
+          <option value="L">LICENCIATURA</option>
+        </select>
+      </div>
+
+      <div class="col-md-2">
+        <label for="inputEmail4" class="form-label" style="color: #6f7271;">Ocupación e instancia donde labora:</label>
+        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+          <option selected>
+            <--Selecciona-->
+          </option>
+          <option value="T">TAREAS DEL HOGAR NO REMUNERADO</option>
+          <option value="O">OTRO</option>
+        </select>
+      </div>
+  </div>
+  </form>
+
+  <div class="container-fluid px-md-5 px-0 pt-4 ">
+    <div style="text-align: center;">
+      <h3 class="title">2. Datos de Contacto</h3>
+    </div>
+
+    <form class="row g-3">
+      <div class="col-md-2">
+        <label for="TV" class="form-label" style="color: #6f7271;">Tipo y nombre de vialidad:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="TV" style="text-transform: uppercase;" required>
+      </div>
+      <div class="col-md-1">
+        <label for="NE" class="form-label" style="color: #6f7271;">No. Ext:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="NE" style="text-transform: uppercase;" required>
+      </div>
+
+      <div class="col-md-1">
+        <label for="NE" class="form-label" style="color: #6f7271;">No. Int:</label>
+        <input type="text" class="form-control" id="NE" style="text-transform: uppercase;">
+      </div>
+
+      <div class="col-md-2">
+        <label for="TV" class="form-label" style="color: #6f7271;">Tipo y nombre de Asentamiento:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="TV" style="text-transform: uppercase;" required>
+      </div>
+
+      <div class="col-md-2">
+        <label for="EC" class="form-label" style="color: #6f7271;">Entre calle:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="EC" style="text-transform: uppercase;" required>
+      </div>
+
+      <div class="col-md-2">
+        <label for="YC" class="form-label" style="color: #6f7271;"> Y calle:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="YC" style="text-transform: uppercase;" required>
+      </div>
+
+      <div class="col-md-2">
+        <label for="CE" class="form-label" style="color: #6f7271;">Correo electrónico:
+        </label>
+        <input type="email" class="form-control" id="CE" style="text-transform: uppercase;">
+      </div>
+
+      <div class="col-md-1">
+        <label for="CP" class="form-label" style="color: #6f7271;">C.P.
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="number" class="form-control" id="CP" style="text-transform: uppercase;" required>
+      </div>
+
+      <div class="col-md-1">
+        <label for="UT" class="form-label" style="color: #6f7271;">U.T.:
+        </label>
+        <input type="number" class="form-control" id="UT" style="text-transform: uppercase;">
+      </div>
+
+      <div class="col-md-1">
+        <label for="TC" class="form-label" style="color: #6f7271;">Tel. casa:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="number" class="form-control" id="TC" required>
+      </div>
+
+      <div class="col-md-1">
+        <label for="Cel" class="form-label" style="color: #6f7271;">Tel. Cel:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="number" class="form-control" id="Cel" required>
+      </div>
+
+      <div class="col-md-1">
+        <label for="TR1" class="form-label" style="color: #6f7271;">Tel. Recados 1:</label>
+        <input type="number" class="form-control" id="TR1">
+      </div>
+
+      <div class="col-md-1">
+        <label for="TR2" class="form-label" style="color: #6f7271;">Tel. Recados 2:</label>
+        <input type="number" class="form-control" id="TR2">
+      </div>
+    </form>
+  </div>
+
+  <div class="container-fluid px-md-5 px-0 pt-4 ">
+    <div style="text-align: center;">
+      <h3 class="title">3. Datos Escolares</h3>
+    </div>
+
+    <form class="row g-3">
+      <div class="col-md-2">
+        <label for="TV" class="form-label" style="color: #6f7271;">Nombre de la escuela:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="TV" style="text-transform: uppercase;" required>
+      </div>
+      <div class="col-md-2">
+        <label for="NE" class="form-label" style="color: #6f7271;">Último promedio de calificaciones:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="NE" style="text-transform: uppercase;" required>
+      </div>
+
+      <div class="col-md-2">
+        <label for="inputEmail4" class="form-label" style="color: #6f7271;">Nivel:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+          <option selected> <--Selecciona--> </option>
+          <option value="P">PRIMARIA</option>
+          <option value="S">SECUNDARIA</option>
+          <option value="BP">BACHILLERATO/PREPARATORIA</option>
+        </select>
+      </div>
+
+      <div class="col-md-1">
+        <label for="CP" class="form-label" style="color: #6f7271;">Grado°:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="number" class="form-control" id="CP" style="text-transform: uppercase;" required>
+      </div>
+
+      <div class="col-md-2">
+        <label for="inputEmail4" class="form-label" style="color: #6f7271;">Tipo de escuela:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" required>
+          <option selected> <--Selecciona--> </option>
+          <option value="P">PUBLICA</option>
+          <option value="S">PRIVADA</option>
+        </select>
+      </div>
+
+
+      <div class="col-md-2">
+        <label for="CLE" class="form-label" style="color: #6f7271;">Clave de la escuela:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="text" class="form-control" id="CLE" style="text-transform: uppercase;" required>
+      </div>
+
+      <div class="col-md-2">
+        <label for="YC" class="form-label" style="color: #6f7271;"> Teléfono:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <input type="number" class="form-control" id="YC" required>
+      </div>
+
+      <div class="col-md-2">
+        <label for="inputEmail4" class="form-label" style="color: #6f7271;">La niña, niño o adolescente realiza actividades extraescolares:
+          <small style="color: #3290ed">*</small>
+        </label>
+        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" required>
+          <option selected> <--Selecciona--> </option>
+          <option value="P">SI</option>
+          <option value="S">NO</option>
+        </select>
+      </div>
+
+      <div class="col-md-2">
+        <label for="gen" class="form-label" style="color: #6f7271;">¿La niña, niño o adolescente recibe Mi Beca Para Empezar?&nbsp;<small
+            class="cdmx-input-error-text d-none" id="box-genre-other-error"></small></label>
+        <div class="container-fluid row d-flex align-items-center">
+          <div class="col-12 col-md-4 d-flex align-items-center">
+            <label class="cdmx-input-radio-container">
+              <span class="cdmx-input-radio-label">Sí</span>
+              <input type="radio" class="" name="box-genre" id="box-genre-female" value="female">
+              <span class="cdmx-input-radio-check"></span>
+            </label>
+          </div>
+          <div class="col-12 col-md-3 d-flex align-items-center">
+            <label class="cdmx-input-radio-container">
+              <span class="cdmx-input-radio-label">No</span>
+              <input type="radio" class="" name="box-genre" id="box-genre-male" value="male">
+              <span class="cdmx-input-radio-check"></span>
+            </label>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="form-floating" style="display: inline-block;">
-      <input type="text" class="form-control" id="floatingInputValue" placeholder="Capturar IDP:" value="">
-      <label for="floatingInputValue">IDP:</label>
-    </div>
-    <div class="mb-3">
-      <label for="formFile" class="form-label">Subir archivo</label>
-      <input class="form-control" type="file" id="formFile" accept="image/*">
-    </div><br>
     </form>
-    
   </div>
-  <br>
+  <div class="container-fluid px-md-5 px-0 pt-4 ">
+    <div style="text-align: center;">
+      <h3 class="title">4. Declaración de Ingresos</h3>
+    </div>
 
-  
-  
-    <ul class="nav nav-tabs">
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"
-          style="color: #691c20;">1.Datos generales</a>
-        <ul class="dropdown-menu">
+    <div class="col-md-2" style="display: inline-block; color: #6f7271;">
+      <label for="floatingTextarea">Ingreso Familiar:
+        <small style="color: #3290ed">*</small>
+      </label>
+      <textarea class="form-control" placeholder="$" id="floatingTextarea" required>$</textarea>
+      
+    </div>
+    </div>
+  </div>
 
-          <li><a class="dropdown-item" href="../pages/submenus/Beneficiario.html">1.1 Beneficiario(a)</a></li>
-          <li><a class="dropdown-item" href="../pages/submenus/MoT.html">1.2 Madre o Tutora</a></li>
-          <li><a class="dropdown-item" href="../pages/submenus/PoT.html">1.3 Padre o Tutor</a></li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../pages/submenus/DatosContacto.html" style="color: #691c20;">2.Datos de contacto</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="../pages/submenus/DatosEscolares.html" style="color: #691c20;">3.Datos Escolares</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../pages/submenus/DeclaracionIngresos.html" style="color: #691c20;">4.Declaración de
-          ingresos</a>
-      </li>
-    </ul>
-
-  
-
+  <script src="pages.js"></script>
 
 </body>
 

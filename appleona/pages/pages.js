@@ -32,6 +32,100 @@ function validarDatos() {
 
 }
 
+document.addEventListener("DOMContentLoaded", function (event) {
+  let submitButton = document.querySelector("button");
+  let textField = document.querySelector("input");
+
+  submitButton.addEventListener("click", validarInfo);
+
+  function validarInfo() {
+
+    //   let newItem = textField.value;
+        var inputap = document.getElementById("AP").value;
+        var inputnb = document.getElementById("NB").value;
+        var campoidp= document.getElementById("CIDP").value;
+        var fechaact = document.getElementById("fecha_act").value;
+        var selac = document.getElementById("AC").value;
+        var foto = document.getElementById("File").value;
+
+      let todo = {
+          
+        nombre: inputnb,
+        apellido: inputap,
+        idp: campoidp,
+        fecha: fechaact,
+        alcaldia: selac,
+        archivo: foto
+          
+      };
+
+      console.log(todo);
+
+      url='http://localhost:3000/renovacion?nombre=';
+      fetch(url + inputnb + '&apellido=' + inputap + '&fecha=' + fechaact + '&alcaldia='+ selac + '&idp=' + campoidp + '&file=' + foto , {
+              method: 'POST', 
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(todo)
+          }).then((res) => res.text())
+          .then((text) => console.log(text))
+          .catch((err) => console.log(err))
+  }
+  
+});
+
+
+// var http = require('http').createServer(webServer),
+// form = require('fs').readFileSync('/renovacion'),
+// querystring = require ('querystring'),
+// util = require ('util'),
+// dataString = ''
+
+// function webServer (req, res) {
+
+//   if(req.method == 'POST') {
+
+//     req
+//         .on('data', function (data) {
+//             dataString += data
+//         })
+//         .on('end', function (){
+//           var templateString = `Los datos que enviaste por post como string son ${dataString}`
+//           console.log(templateString)
+//           res.end(templateString)
+//         })
+        
+
+//   }
+// }
+
+
+
+
+
+// function validarInfo(){
+//     var inputap = document.getElementById("AP").value;
+//     var inputnb = document.getElementById("NB").value;
+//     var campoidp = document.getElementById("CIDP").value;
+//     if (inputap.value == "") {
+//         pMensaje.innerHTML = "Error: El campo esta vacio"
+//     }
+//     else if (inputnb.value == "") {
+//         pMensaje.innerHTML = "Error: El campo esta vacio"
+//     }
+//     else {
+//         url='http://localhost:3000/renovacion?nombre='
+//         .then(url+inputnb+'&apellido='+inputap+'&idp='+campoidp).then((req) => 
+//             req.json()).then((query) => {
+//                 console.log("Captura datos: " , query[0].inputnb, query[0].inputap, query[0].campoidp);
+//                 alert("Registro exitoso!!!");
+//             })
+
+//     }
+
+// }
+
 
 // // console.log("Query OK, resultado: ",res);
 // const query = res;
@@ -42,7 +136,7 @@ function validarDatos() {
 
 
 //Ejemplo implementando el metodo POST:
-// async function postData(url = '', data = {}) {
+// async function postData(url = 'http://localhost:3000/renovacion?nombre=', data = {}) {
 //     // Opciones por defecto estan marcadas con un *
 //     const response = await fetch(url, {
 //       method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -60,13 +154,10 @@ function validarDatos() {
 //     return response.json(); // parses JSON response into native JavaScript objects
 //   }
 
-//   postData('https://example.com/answer', { answer: 42 })
+//   postData('http://localhost:3000/renovacion', { answer: `` })
 //     .then(data => {
 //       console.log(data); // JSON data parsed by `data.json()` call
 //     });
-
-
-
 
 
 
