@@ -26,7 +26,6 @@ function validarDatos() {
             // else console.log(e);
          
         });
-            
            
     }
 
@@ -46,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var campoidp= document.getElementById("CIDP").value;
         var fechaact = document.getElementById("fecha_act").value;
         var selac = document.getElementById("AC").value;
-        var foto = document.getElementById("File").value;
+        //var foto = document.getElementById("File").value;
+        //var omyblob = new Blob(foto, {type: 'text/html'});
 
       let todo = {
           
@@ -54,15 +54,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
         apellido: inputap,
         idp: campoidp,
         fecha: fechaact,
-        alcaldia: selac,
-        archivo: foto
+        alcaldia: selac
           
       };
 
       console.log(todo);
 
       url='http://localhost:3000/renovacion?nombre=';
-      fetch(url + inputnb + '&apellido=' + inputap + '&fecha=' + fechaact + '&alcaldia='+ selac + '&idp=' + campoidp + '&file=' + foto , {
+      fetch(url + inputnb + '&apellido=' + inputap + '&fecha=' + fechaact + '&alcaldia='+ selac + '&idp=' + campoidp, {
               method: 'POST', 
               headers: {
                   'Content-Type': 'application/json'
