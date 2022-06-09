@@ -45,8 +45,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         var campoidp= document.getElementById("CIDP").value;
         var fechaact = document.getElementById("fecha_act").value;
         var selac = document.getElementById("AC").value;
-        //var foto = document.getElementById("File").value;
-        //var omyblob = new Blob(foto, {type: 'text/html'});
 
       let todo = {
           
