@@ -1,11 +1,11 @@
-//SW prueba
+//SW prueba3
 // imports
 importScripts('js/sw-utils.js');
 
 
-const STATIC_CACHE = 'static-v3';
-const DYNAMIC_CACHE = 'dynamic-v3';
-const INMUTABLE_CACHE = 'inmutable-v3';
+const STATIC_CACHE = 'static-v5';
+const DYNAMIC_CACHE = 'dynamic-v5';
+const INMUTABLE_CACHE = 'inmutable-v5';
 
 const APP_SHELL = [
     //'/',
